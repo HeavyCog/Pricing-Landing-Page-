@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <div class="currency-select">
+                <label for="currency">Select Currency:</label>
+                <select id="currency">
+                    <option value="INR" selected>INR (₹)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="KRW">KRW (₩)</option>
+                    <option value="RUB">RUB (₽)</option>
+                </select>
+            </div>
+
+            <div class="pricing-table">
+                <section class="plan" data-plan="basic">
+                    <h3>Basic</h3>
+                    <img src="./img/basic.png" alt="Basic Plan Image">
+                    <p class="price" data-price="1400">₹1400<span>/mo</span></p>
+                    <ul>
+                        <li>Unlimited Access</li>
+                        <li>1 GB Storage</li>
+                        <li>3 Users</li>
+                        <li>Unlimited Tasks</li>
+                    </ul>
+                    <a href="#" class="btn">Select Plan</a>
+                </section>
+
+                <section class="plan" data-plan="pro">
+                    <h3>Pro</h3>
+                    <img src="./img/pro.png" alt="Pro Plan Image">
+                    <p class="price" data-price="2900">₹2900<span>/mo</span></p>
+                    <ul>
+                        <li>All In Free +</li>
+                        <li>Unlimited Guest</li>
+                        <li>Priority Support</li>
+                        <li>Smart Notification</li>
+                    </ul>
+                    <a href="#" class="btn">Select Plan</a>
+                </section>
+
+                <section class="plan" data-plan="enterprise">
+                    <h3>Enterprise</h3>
+                    <img src="./img/enterprise.png" alt="Enterprise Plan Image">
+                    <p class="price" data-price="7400">₹7400<span>/mo</span></p>
+                    <ul>
+                        <li>All In Unlimited +</li>
+                        <li>Bulk Support</li>
+                        <li>24/7 support</li>
+                        <li>Advanced Security</li>
+                    </ul>
+                    <a href="#" class="btn">Select Plan</a>
+                </section>
+
+                <section class="plan" data-plan="custom">
+                    <h3>Custom</h3>
+                    <img src="./img/custom.png" alt="Custom Plan Image">
+                    <p class="price" data-price="0">Contact Us</p>
+                    <ul>
+                        <li>Personalized features</li>
+                        <li>Dedicated account manager</li>
+                        <li>Tailored pricing</li>
+                        <li>Personalized On Your Own </li>
+                    </ul>
+                    <a href="#" class="btn">Contact Us</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Created By Harsh.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
